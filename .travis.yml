@@ -1,6 +1,7 @@
 sudo: required
 
-services: -docker
+services:
+  - docker
 
 before_install:
   - docker build -t brkuntmz/sample-docker-react -f Dockerfile.dev .
